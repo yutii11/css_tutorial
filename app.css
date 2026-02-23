@@ -1,0 +1,28 @@
+h1{
+    color: blueviolet;
+    font-size: 60px;
+    font-weight: 500;
+    text-decoration: underline wavy;
+    font-style: italic;
+    text-transform: uppercase;
+}
+h2{
+    color: black;
+    font-size: 40px;
+    font-weight: 300;
+    text-decoration: line-through green;
+    font-style: oblique;
+    text-transform: lowercase;
+} 
+p{
+    color: aqua;
+    font-size: 30px;
+    font-weight: 200;
+    text-decoration: overline;
+    font-style: oblique 30deg;
+    text-transform: capitalize;
+}
+ul{
+    list-style-type: square;
+    color: brown;
+}
