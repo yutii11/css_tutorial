@@ -13,15 +13,26 @@
 }
 .main_box .sidebar_menu{
     position:fixed;
+    top: 0;
+    left: 0;
     height:100vh;
     width:200px;
-    background: rgb(255, 255, 255, 0.5);
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
 .sidebar_menu .logo{
-    position:absolute;
-    width:100%;
+    position: absolute;
+    width: 100%;
     height: 60px;
-    box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+}
+
+.sidebar_menu .menu {
+    position: absolute;
+    top: 60px; /* Place menu directly below the logo */
+    width: 200px;
 }
 .sidebar_menu .logo a{
     color: #fff;
@@ -32,13 +43,8 @@
     line-height: 60px;
     text-decoration: none;
 }
-.sidebar_menu .menu{
-    position: absolute ;
-    top:80px;
-    width:100%;
-}
 .sidebar_menu .menu li{
-    margin-top: 6px;
+    margin-top: 60px;
     padding: 14px 20px;
 }
 .sidebar_menu .menu i{
@@ -57,10 +63,12 @@
 }
 .sidebar_menu .social_media{
     position: absolute;
-    left:50px;
+    left: 50%;
     bottom: 20px;
     transform: translateX(-50%);
     cursor: pointer;
+    width: 100px;
+    text-align: center;
 }
 .social_media i{ 
     padding: 0 5px;
