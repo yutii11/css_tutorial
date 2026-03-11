@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2? family=roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #eed891;
+}
+.wrapper{
+    width: 620px;
+    height: 330px;
+    align-items: center;
+    position: relative;
+    background: #d48600;
+    border-top: 2px solid #cc6600;
+    border-left: 2px solid #cc6600;
+    box-shadow: 0 5px 10px rgba(0,0,0);
+}
+.wrapper .flip-card{
+    width: 100%;
+    height: 100%;
+    background: #d48600;
+    position: relative;
+   
+}
+.flip-card .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     width: 100%;
+    height: 100%;
+    background: #D48600;
+    border-top: 2px solid #cc6600;
+    border-left: 2px solid #cc6600;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+.card span.triangle::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -40px;
+    top: 20px;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 110px solid red;
+}
